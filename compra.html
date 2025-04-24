@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Compra</title>
+</head>
+<body>
+
+    <header id="contenido-producto">
+        <article>
+            <img src="./img/logo.jpeg" alt="logo">
+        </article>
+        <nav>
+            <ul>
+                <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="index.html">Regresar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form id="formulario-compra">
+        <h2>Formulario de Compra</h2>
+    
+        <label for="tipo-compra">Selecciona el tipo de compra:</label>
+        <select id="tipo-compra" name="tipo-compra">
+            <option value="reserva">Reserva de Mesa</option>
+            <option value="evento">Evento</option>
+            <option value="boleta">Compra de Boleta</option>
+            <option value="licor">Compra de Licor</option>
+        </select>
+    
+       
+        <div id="seccion-licor" class="compra-detalles">
+            <label for="licor">Selecciona el Licor:</label>
+            <select id="licor" name="licor">
+                <option value="tequila">Tequila</option>
+                <option value="ron">Ron</option>
+                <option value="vodka">Vodka</option>
+                <option value="whiskey">Whiskey</option>
+                <option value="ginebra">Ginebra</option>
+            </select>
+        </div>
+    
+        
+        <div id="seccion-reserva" class="compra-detalles">
+            <label for="cantidad-personas">Cantidad de personas:</label>
+            <input type="number" id="cantidad-personas" name="cantidad-personas" min="1" required>
+            <label for="fecha-reserva">Fecha de la Reserva:</label>
+            <input type="date" id="fecha-reserva" name="fecha-reserva" required>
+        </div>
+    
+       
+        <div id="seccion-evento" class="compra-detalles">
+            <label for="tipo-evento">Tipo de Evento:</label>
+            <select id="tipo-evento" name="tipo-evento">
+                <option value="fiesta">Fiesta</option>
+                <option value="concierto">Concierto</option>
+                <option value="cumpleaños">Cumpleaños</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+    
+        
+        <div id="seccion-boleta" class="compra-detalles">
+            <label for="tipo-boleta">Selecciona el tipo de boleta:</label>
+            <select id="tipo-boleta" name="tipo-boleta">
+                <option value="general">General</option>
+                <option value="vip">VIP</option>
+            </select>
+        </div>
+    
+        <button type="submit">Realizar Compra</button>
+    </form>
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#about">Sobre nosotros</a></li>
+                    <li><a href="#privacy">Política de privacidad</a></li>
+                    <li><a href="#terms">Términos de servicio</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="footer-credit">
+                <p>&copy; 2025 Tu Empresa. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
